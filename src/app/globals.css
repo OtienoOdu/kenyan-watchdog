@@ -1,0 +1,107 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97%; /* Off-white (Represents White from flag) */
+    --foreground: 0 0% 7%; /* Very Dark Gray/Near Black (Represents Black from flag) */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 4 79% 51%; /* Kenyan Red (e.g., #DA291C) */
+    --primary-foreground: 0 0% 98%; /* White text on Red */
+
+    --secondary: 151 100% 26%; /* Kenyan Green (e.g., #00843D) */
+    --secondary-foreground: 0 0% 98%; /* White text on Green */
+
+    --muted: 0 0% 90%; /* Light gray for less emphasis */
+    --muted-foreground: 0 0% 40%; /* Darker gray text on muted */
+
+    --accent: 0 0% 13%; /* Dark Gray/Near Black (as an accent) */
+    --accent-foreground: 0 0% 98%; /* White text on black accent */
+
+    --destructive: 0 84.2% 60.2%; /* Standard destructive red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 87%; /* Light gray border */
+    --input: 0 0% 87%;
+    --ring: 4 79% 51%; /* Red (primary) for focus rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 4 79% 51%; /* Red */
+    --chart-2: 151 100% 26%; /* Green */
+    --chart-3: 0 0% 20%; /* Dark Gray/Black */
+    --chart-4: 0 0% 60%; /* Medium Gray (Neutral) */
+    --chart-5: 4 70% 70%; /* Lighter Red */
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 4 79% 51%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 0 0% 87%;
+    --sidebar-ring: 4 79% 51%;
+  }
+
+  .dark {
+    --background: 0 0% 7%; /* Very Dark Gray/Near Black (Represents Black from flag) */
+    --foreground: 0 0% 95%; /* Off-white (Represents White from flag) */
+
+    --card: 0 0% 12%; /* Slightly lighter dark for cards */
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 4 79% 56%; /* Kenyan Red (brighter for dark mode) */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 151 80% 35%; /* Kenyan Green (brighter/more saturated for dark mode) */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%; /* Darker gray */
+    --muted-foreground: 0 0% 60%; /* Lighter gray text */
+
+    --accent: 0 0% 98%; /* White/Off-white (as an accent for dark theme) */
+    --accent-foreground: 0 0% 7%; /* Black text on white accent */
+
+    --destructive: 0 70% 45%; /* Darker destructive red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%; /* Dark gray border (matches muted bg) */
+    --input: 0 0% 15%;
+    --ring: 4 79% 56%; /* Red (primary) for focus rings */
+    
+    --chart-1: 4 79% 56%; /* Red (dark theme) */
+    --chart-2: 151 80% 35%; /* Green (dark theme) */
+    --chart-3: 0 0% 80%; /* Light Gray/White (for contrast on dark bg) */
+    --chart-4: 0 0% 50%; /* Medium Gray (Neutral) */
+    --chart-5: 4 70% 75%; /* Lighter Red (dark theme) */
+
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 4 79% 56%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 4 79% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
